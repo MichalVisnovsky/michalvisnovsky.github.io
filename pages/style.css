@@ -45,7 +45,6 @@
 }
 
 * {
-    margin: 10;
     padding: 0;
 }
 
@@ -71,6 +70,7 @@ h1 {
 	font-family: 'PPMigra';
 	font-weight: bold;
 	font-style: italic;
+    margin: 0;
 }
 
 p {
@@ -80,7 +80,7 @@ p {
 	font-style: normal;
 	max-width: 550px;
 	line-height: calc(1ex / 0.32);
-	
+	margin: 0;
 }
 
 /* TRANSITION */
@@ -105,10 +105,11 @@ a,
 nav,
 .nav-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     height: 17vh;
 	font-family: 'Agrandir';
+    font-weight: 600;
 }
 
 .nav-links {
@@ -194,7 +195,6 @@ a:hover {
 .menu-links.open {
     max-height: 300px;
 }
-
 .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
 }
@@ -221,18 +221,30 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
+    padding-bottom: 40vh;
     box-sizing: border-box;
     min-height: fit-content;
     display: flex;
     justify-content: space-between;
+
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 116px;
 }
 
 .section_container{
     justify-content: space-between;
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.section_subcontainer{
+    display: flex;
     flex-direction: column;
+    gap: 2rem;
+    width: 100%;
 }
 
 /* PROFILE SECTION */
@@ -242,7 +254,6 @@ section {
     width: 400px;
     margin: 0 0;
 }
-
 
 .section_text {
     align-self: center;
@@ -300,11 +311,19 @@ section {
 	background: #A6BFFF;
 	border-radius: calc(2rem + 15px);
 }
+
+.article-container{
+    
+    width: calc(80% - 10px);
+    height: calc(100% - 10px);
+    aspect-ratio: 16 / 9;
+}
+
 .project-img {
-	width: 90%;
+	max-width:100%;
+    height: auto;
 	border-radius: 2rem;
-	height: 90%;
-	object-fit: contain;
+    object-fit: cover;
 }
 
 .project-title {
@@ -321,10 +340,16 @@ section {
 	justify-content: center;
 	align-items: center;
 	padding: 1.5rem;
-	flex: 1;
 	border-radius: calc(2rem + 15px);
 	text-align: center;
 	border-color: #222;
+
+}
+
+.row-gap{
+    height: 0;
+    width:100%;
+    margin-bottom: 20px;
 }
 
 .color-container1 {
@@ -333,3 +358,28 @@ section {
 	border-radius: calc(2rem + 15px);
 }
 /* ABOUT ME SECTION */
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.grid-item {
+    display: flex; 
+    flex-basis: calc(50% - 40px);  
+    flex-direction: column;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.down{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
