@@ -63,9 +63,6 @@ html {
     font-weight: 500;
     font-size: 16px;
     font-stretch: expanded;
-}
-
-html {
     scroll-behavior: smooth;
 }
 
