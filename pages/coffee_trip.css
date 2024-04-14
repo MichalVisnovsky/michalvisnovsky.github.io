@@ -10,14 +10,14 @@
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    overflow: hidden;
   }
   
   .carousel {
     display: inline-block;
     position: relative;
     width: 40vw;
-    height: 20vw;
-    overflow: hidden;
+    height: 30vw;
   }
   
   .carousel__item {
@@ -29,7 +29,8 @@
     width: 50%;
     height: 100%;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     transition: transform 0.5s, opacity 0.5s;
   }
   
@@ -42,7 +43,7 @@
   }
   
   .carousel__item--center {
-      box-shadow: 0px 0px 8px #000;
+
       
     z-index: 1;
   }

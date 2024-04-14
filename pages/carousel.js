@@ -162,19 +162,19 @@ new Carousel({
 	target: document.querySelector('.carousel'),
   items: [
   	{
-    	image: "/assets/landing_page/pic_hello.png"
+    	image: "/assets/coffee_trip/carousel-1.png"
     },
   	{
-    	image: "https://unsplash.it/600/600/?image=1078"
+    	image: "/assets/coffee_trip/carousel-2.png"
     },
   	{
-    	image: "https://unsplash.it/600/600/?image=1077"
+    	image: "/assets/coffee_trip/carousel-3.png"
     },
   	{
-    	image: "https://unsplash.it/600/600/?image=1076"
+    	image: "/assets/coffee_trip/carousel-4.png"
     },
   	{
-    	image: "https://unsplash.it/600/600/?image=1075"
+    	image: "/assets/coffee_trip/carousel-5.png"
     }
   ]
 });
