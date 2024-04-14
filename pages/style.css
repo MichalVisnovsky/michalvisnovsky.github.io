@@ -245,6 +245,10 @@ section {
     padding-bottom: 40vh;
 }
 
+#hello .primary-button{
+    padding-top: 24px;
+}
+
 .section_container {
     justify-content: space-between;
     display: flex;
