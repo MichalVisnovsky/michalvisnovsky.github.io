@@ -1,4 +1,3 @@
-console.clear();
 
 class Carousel {
 	constructor (config) {
