@@ -107,6 +107,13 @@ a,
 }
 
 /* DESKTOP NAV */
+nav {
+    position: fixed; 
+    top: 0; /* Position the navbar at the top of the viewport */
+    z-index: 1000;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    width: 1200px;
+}
 
 nav,
 .nav-links {
@@ -296,6 +303,9 @@ section {
     line-height: normal;
     letter-spacing: 1.6px;
     white-space: pre-line;
+    flex: 0;
+    width: 615px !important;
+    
 }
 
 .title {
@@ -503,7 +513,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 80ch;
+    width: 100ch;
 }
 
 .aboutme-subsection {
@@ -615,11 +625,25 @@ section {
     gap: 24px;
 }
 
+.gap-56{
+    gap: 56px;
+}
+
 .flex{
     display: flex;
     flex-direction: column;
 }
 
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
 .w-640{
     width: 640px;
+}
+
+
+.flex-wrap{
+    flex-wrap: wrap;
 }
