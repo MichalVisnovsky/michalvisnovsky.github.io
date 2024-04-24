@@ -37,25 +37,26 @@
   }
 
   .carousel__item--left {
+    z-index: 0;
       transform: translateX(-75%) scale(0.7);
   }
 
   .carousel__item--center {
-
-
       z-index: 1;
   }
 
   .carousel__item--right {
+    z-index: 0;
       transform: translateX(75%) scale(0.7);
   }
 
   .carousel__item--out.carousel__item--left {
-      transform: translateX(-125%) scale(0.7);
+    z-index: -1;
+    transform: translateX(-125%) scale(0.7);
   }
-
   .carousel__item--out.carousel__item--right {
-      transform: translateX(125%) scale(0.7);
+    z-index: -1;
+    transform: translateX(125%) scale(0.7);
   }
 
   .carousel__arrow {
