@@ -1,10 +1,58 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>My Project</title>
-</head>
-<body>
-    <h1>Hello, World!</h1>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>MH brand design</title>
+        <link rel="stylesheet" href="/pages/mediaqueries.css" />
+        <link rel="stylesheet" href="/pages/style.css" />
+        <link rel="stylesheet" href="/pages/hamburger-menu.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="icon" type="image/x-icon" href="/assets/favicon-32x32.png">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Questrial&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <nav id="desktop-nav">
+                <div>
+                    <a href="/">
+                        <img class="logo" src="/assets/logo_round.png" />
+                    </a>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="/#home">Home</a></li>
+                        <li><a href="/#work">Work</a></li>
+                        <li><a href="/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <nav id="hamburger-nav">
+                <div>
+                    <a href="/">
+                        <img class="logo" src="/assets/logo_round.png" />
+                    </a>
+                </div>
+                <div class="hamburger-menu">
+                    <div class="hamburger-icon" onclick="togglemenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="menu-links">
+                        <a href="/#home" onclick="togglemenu()">Home</a>
+                        <a href="/#work" onclick="togglemenu()">Work</a>
+                        <a href="/#contact" onclick="togglemenu()">Contact</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <script src="/pages/script.js"></script>
 </body>
 </html>

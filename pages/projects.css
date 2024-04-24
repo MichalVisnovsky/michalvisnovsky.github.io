@@ -114,10 +114,15 @@
       height: 563px;
   }
 
+  .hero_width {
+      width: 797px;
+  }
+
     .line {
-      width: 764px;
+      width: 797px;
       stroke-width: 1.5px;
       stroke: #000;
+      margin-left: 40px;
   }
 
   .keys {

@@ -83,7 +83,7 @@ p {
     font-family: 'Agrandir';
     font-weight: normal;
     font-style: normal;
-    max-width: 550px;
+    max-width: 615px;
     line-height: calc(1ex / 0.32);
     margin: 0;
 }
@@ -189,7 +189,6 @@ a:hover {
     top: 100%;
     right: 0;
     width: fit-content;
-    background-color: #f3e5f5;
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -304,8 +303,6 @@ section {
     letter-spacing: 1.6px;
     white-space: pre-line;
     flex: 0;
-    width: 615px !important;
-    
 }
 
 .title {
@@ -540,12 +537,14 @@ section {
     transition: all 0.3s ease-in-out;
     letter-spacing: 1.6px;
     width: 16ch;
+    text-decoration: none;
 }
 
 
 .primary-button-style:hover {
     background: #9D9ADE;
     color: white;
+    text-decoration: none;
     transition: all 0.3s ease-in-out;
 }
 
